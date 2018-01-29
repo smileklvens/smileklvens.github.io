@@ -112,20 +112,9 @@ layout: default
                         {% endif %}
                         <!-- SNS Link -->
                         <ul class="list-inline">
-                            {% if site.RSS %}
+                            {% if site.jianshu_url %}
                             <li>
-                                <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            {% endif %}
-                            <!-- add jianshu add target = "_blank" to <a> by BY -->
-                            {% if site.jianshu_username %}
-                            <li>
-                                <a target="_blank" href="https://www.jianshu.com/u/{{ site.jianshu_username }}">
+                                <a target="_blank" href="{{ site.jianshu_url }}">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa  fa-stack-1x fa-inverse">简</i>
@@ -134,9 +123,9 @@ layout: default
                             </li>
                             {% endif %}
 
-                            {% if site.juejin_username %}
+                            {% if site.juejin_url %}
                             <li>
-                                <a target="_blank" href="https://www.jianshu.com/u/{{ site.juejin_username }}">
+                                <a target="_blank" href="{{ site.juejin_url }}">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa  fa-stack-1x fa-inverse">掘</i>
@@ -145,16 +134,7 @@ layout: default
                             </li>
                             {% endif %}
 
-                            {% if site.twitter_username %}
-                            <li>
-                                <a href="https://twitter.com/{{ site.twitter_username }}">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            {% endif %}
+                           
                             {% if site.zhihu_username %}
                             <li>
                                 <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
@@ -175,16 +155,7 @@ layout: default
                                 </a>
                             </li>
                             {% endif %}
-                            {% if site.facebook_username %}
-                            <li>
-                                <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            {% endif %}
+                           
                             {% if site.github_username %}
                             <li>
                                 <a target="_blank" href="https://github.com/{{ site.github_username }}">
@@ -198,7 +169,7 @@ layout: default
                             
                         </ul>
                         {% if site.email %}
-                            <p>✉️ {{site.email}}</p>
+                            <p >✉️ {{site.email}}</p>
                         {% endif %}
                     </div>
                 </section>

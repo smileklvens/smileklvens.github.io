@@ -18,15 +18,10 @@ sidebar-avatar: /img/author.jpg      # use absolute URL, seeing it's used in bot
 
 # SNS settings
 RSS: false
-# weibo_username:     qiubaiying
 # zhihu_username:     smileklvens
 github_username:    smileklvens
-# facebook_username:  baiying.qiu.7
-jianshu_username:   smileklvens
-juejin_username:   smileklvens
-
-#twitter_username:   qiubaiying
-
+jianshu_url:   https://www.jianshu.com/u/48f58b8c6a01
+juejin_url:   https://juejin.im/user/57a7d9851532bc0060d109c1/posts
 
 
 
